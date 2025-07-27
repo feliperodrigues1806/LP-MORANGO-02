@@ -147,8 +147,8 @@ export default function SalesPage() {
         </section>
 
         <section className="container mx-auto max-w-5xl px-4 py-16 text-center sm:py-24">
-          <h2 className="font-headline text-3xl font-bold sm:text-4xl">Na prática, é sobre isso...</h2>
-          <p className="mt-4 text-lg text-foreground/80">Imagine entregar um doce digno de vitrine, com uma casquinha crocante e brilhante.</p>
+          <h2 className="font-headline text-3xl font-bold sm:text-4xl">Você vai fazer Morangos do Amor como esses:</h2>
+          <p className="mt-4 text-lg text-foreground/80">Imagine entregar um doce digno de vitrine, com uma casquinha crocante e brilhante. Mesmo que você tenha ZERO experiência na cozinha,</p>
           <div className="mt-10 max-w-3xl mx-auto">
             <Carousel opts={{ loop: true }} className="w-full">
               <CarouselContent>
@@ -160,7 +160,8 @@ export default function SalesPage() {
               <CarouselNext className="mr-12" />
             </Carousel>
           </div>
-          <p className="mt-8 text-xl text-foreground/80 font-headline">Agora imagine seus amigos dizendo: <span className="font-bold text-foreground">“Você que fez isso?”</span></p>
+          <p className="mt-8 text-xl font-bold font-headline">Com nosso método, QUALQUER UM pode fazer!</p>
+          <p className="mt-4 text-xl text-foreground/80 font-headline">Agora imagine seus amigos dizendo: <span className="font-bold text-foreground">“Você que fez isso?”</span></p>
           <p className="mt-4 text-xl font-bold font-headline">Ou melhor… imagine vender e <span className="text-accent">lucrar</span> com ele.</p>
         </section>
 
