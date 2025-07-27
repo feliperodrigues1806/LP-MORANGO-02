@@ -92,7 +92,7 @@ export default function SalesPage() {
           </p>
           <div className="mt-10">
             <Button asChild size="lg" className="h-auto w-full max-w-md bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase tracking-wider text-lg px-10 py-6 shadow-2xl shadow-accent/40 transition-transform duration-300 hover:scale-105">
-              <a href="#cta">QUERO O MEU ACESSO POR R$9,90 AGORA</a>
+              <a href="#cta">QUERO APRENDER O TRUQUE AGORA!</a>
             </Button>
           </div>
         </section>
