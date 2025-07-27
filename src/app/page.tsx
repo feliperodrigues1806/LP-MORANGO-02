@@ -81,23 +81,34 @@ export default function SalesPage() {
 
         <section className="bg-card py-16 sm:py-24">
           <div className="container mx-auto max-w-3xl px-4">
-            <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">Você já se frustrou ao tentar...</h2>
+            <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">CHEGA DE:</h2>
             <Card className="mt-10 p-8 shadow-lg bg-background">
               <ul className="space-y-5 text-lg text-foreground/90">
                 <li className="flex items-start gap-4">
                   <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
-                  <span>Seguir vídeos no TikTok que <strong>pulam etapas cruciais?</strong></span>
+                  <span>Ficar perdida sem saber por onde começar</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
-                  <span>Fazer a calda e ela <strong>grudar, queimar ou nunca dar o ponto?</strong></span>
+                  <span>Tentar fazer e sempre errar o ponto da calda</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
-                  <span>Repetir a receita e o doce continuar <strong>melando e pegajoso?</strong></span>
+                  <span>Gastar ingredientes e jogar tudo fora</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
+                  <span>Se sentir frustrada por ver todo mundo conseguindo, menos você</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
+                  <span>Ter medo de tentar de novo e se decepcionar</span>
+                </li>
+                <li className="flex items-start gap-4">
+                  <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
+                  <span>Só assistir vídeos e nunca conseguir repetir em casa</span>
                 </li>
               </ul>
-              <p className="mt-8 text-center text-xl font-semibold font-headline">Então essa página é para você.</p>
             </Card>
           </div>
         </section>
