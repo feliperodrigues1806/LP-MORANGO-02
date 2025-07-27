@@ -322,7 +322,7 @@ export default function SalesPage() {
 
         <section className="container mx-auto max-w-3xl px-4 pb-16 text-center sm:pb-24">
           <h3 className="text-2xl font-bold font-headline">Ainda tem dúvidas?</h3>
-          <p className="mt-2 text-lg text-foreground/80">fale com a gente pelo whatsapp</p>
+          <p className="mt-2 text-lg text-foreground/80">Fale com a gente pelo Whatsapp</p>
           <div className="mt-6">
             <Button asChild size="lg" className="h-auto bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4">
               <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
@@ -349,5 +349,7 @@ export default function SalesPage() {
       </footer>
     </div>
   )
+
+    
 
     
