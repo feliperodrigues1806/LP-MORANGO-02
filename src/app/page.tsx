@@ -11,19 +11,19 @@ export default function SalesPage() {
   const benefits = [
     {
       icon: <Smartphone className="h-8 w-8" />,
-      text: "App com interface intuitiva",
+      text: "App personalizado para você!",
     },
     {
       icon: <Video className="h-8 w-8" />,
-      text: "Vídeo mostrando o ponto exato da calda",
+      text: "Vídeo mostrando CADA passo da receita",
     },
     {
       icon: <BookOpen className="h-8 w-8" />,
-      text: "PDF completo com dicas e erros comuns",
+      text: "PDF detalhado da receita",
     },
     {
       icon: <Gift className="h-8 w-8" />,
-      text: "BÔNUS: 150 receitas de recheios",
+      text: "SUPER BÔNUS: 150 receitas de recheios",
     },
   ];
 
@@ -130,7 +130,7 @@ export default function SalesPage() {
 
         <section className="bg-card py-16 sm:py-24">
           <div className="container mx-auto max-w-4xl px-4">
-            <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">O que você recebe imediatamente</h2>
+            <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">Tudo que você vai receber:</h2>
             <Card className="mt-12 p-8 shadow-lg bg-background">
               <ul className="space-y-6">
                 {benefits.map((benefit, index) => (
