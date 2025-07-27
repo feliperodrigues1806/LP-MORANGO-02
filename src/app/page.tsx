@@ -83,6 +83,9 @@ export default function SalesPage() {
           <div className="container mx-auto max-w-3xl px-4">
             <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">CHEGA DE:</h2>
             <Card className="mt-10 p-8 shadow-lg bg-background">
+              <div className="mb-8">
+                <Image src="https://i.imgur.com/9nc3Jw5.jpeg" alt="Morangos com calda" width={800} height={533} className="w-full rounded-2xl shadow-xl" />
+              </div>
               <ul className="space-y-5 text-lg text-foreground/90">
                 <li className="flex items-start gap-4">
                   <XCircle className="mt-1 h-6 w-6 flex-shrink-0 text-destructive" />
@@ -110,9 +113,6 @@ export default function SalesPage() {
                 </li>
               </ul>
             </Card>
-            <div className="mt-12">
-              <Image src="https://i.imgur.com/9nc3Jw5.jpeg" alt="Morangos com calda" width={1200} height={800} className="w-full rounded-2xl shadow-2xl" />
-            </div>
           </div>
         </section>
 
