@@ -10,14 +10,15 @@ export default {
   theme: {
     container: {
       center: true,
+      padding: '1rem',
       screens: {
         '2xl': '1400px',
       },
     },
     extend: {
       fontFamily: {
-        body: ['Belleza', 'sans-serif'],
-        headline: ['Belleza', 'sans-serif'],
+        body: ['var(--font-belleza)', 'sans-serif'],
+        headline: ['var(--font-belleza)', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {

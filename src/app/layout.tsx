@@ -1,6 +1,14 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import { Belleza } from 'next/font/google';
+
+const belleza = Belleza({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-belleza',
+});
 
 export const metadata: Metadata = {
   title: 'Morango do Amor Pro',
@@ -13,11 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
+    <html lang="pt-BR" className={`scroll-smooth ${belleza.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet" />
         {/* Meta Pixel Code */}
         <script dangerouslySetInnerHTML={{ __html: `
           !function(f,b,e,v,n,t,s)
