@@ -46,7 +46,7 @@ function CountdownTimer() {
   }, []);
 
   return (
-    <div className="flex items-center gap-2 font-bold text-red-500 animate-pulse">
+    <div className="flex items-center gap-2 font-bold text-white">
         <AlarmClock className="h-6 w-6" />
         <span>OFERTA ACABANDO:</span>
         <span className="font-mono tracking-wider">
@@ -124,12 +124,9 @@ export default function SalesPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background font-body text-foreground">
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 max-w-screen-lg items-center justify-between px-4">
+      <header className="sticky top-0 z-50 w-full bg-green-500">
+        <div className="container flex h-16 max-w-screen-lg items-center justify-center px-4">
           <CountdownTimer />
-          <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold shadow-lg">
-            <a href="#cta">Quero o Acesso</a>
-          </Button>
         </div>
       </header>
 
@@ -335,5 +332,3 @@ export default function SalesPage() {
     </div>
   )
 }
-
-    
