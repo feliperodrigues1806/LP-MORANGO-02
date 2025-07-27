@@ -58,12 +58,14 @@ export default function SalesPage() {
   ];
 
   const offerItems = [
-      { text: "Acesso Exclusivo ao APP", price: "De R$ 30" },
-      { text: "PDF DETALHADO DE NOSSA RECEITA", price: "De R$ 20" },
-      { text: "VÍDEO PASSO A PASSO DA RECEITA", price: "De R$ 27" },
-      { text: "BÔNUS EXCLUSIVO: 150 Receitas de Recheios que não vão ao fogo", price: "De R$ 97" },
-      { text: "Suporte Profissional", price: "" },
-      { text: "Garantia Incondicional", price: "" },
+    { text: "Acesso Exclusivo ao APP", price: "De R$ 30" },
+    { text: "PDF DETALHADO DE NOSSA RECEITA", price: "De R$ 20" },
+    { text: "VÍDEO PASSO A PASSO DA RECEITA", price: "De R$ 27" },
+    { text: "BÔNUS EXCLUSIVO: 150 Receitas de Recheios que não vão ao fogo", price: "De R$ 97" },
+    { text: "Truque do Morango do Amor", price: "De R$ 197" },
+    { text: "Anos de experiência na confeitaria", price: "De R$ ∞" },
+    { text: "Suporte Profissional", price: "" },
+    { text: "Garantia Incondicional", price: "" },
   ];
 
   return (
@@ -136,20 +138,25 @@ export default function SalesPage() {
         </section>
 
         <section className="container mx-auto max-w-5xl px-4 py-16 sm:py-24">
-          <div className="grid items-center gap-12 md:grid-cols-2">
-             <div className="order-2 md:order-1">
-              <Card className="overflow-hidden rounded-2xl shadow-2xl shadow-primary/20">
-                <Image src="https://i.imgur.com/AoRMTxa.png" alt="App Preview" width={600} height={800} className="w-full" data-ai-hint="app mockup" />
-              </Card>
+            <div className="grid items-center gap-12 md:grid-cols-2">
+                <div className="md:order-1">
+                    <Card className="overflow-hidden rounded-2xl shadow-2xl shadow-primary/20 md:block hidden">
+                        <Image src="https://i.imgur.com/AoRMTxa.png" alt="App Preview" width={600} height={800} className="w-full" data-ai-hint="app mockup" />
+                    </Card>
+                </div>
+                <div className="text-center md:text-left md:order-2">
+                    <h2 className="font-headline text-3xl font-bold text-foreground sm:text-4xl">Com o app "O Segredo do Morango do Amor Perfeito" você vai descobrir o que não te contam para fazer um doce impecável.</h2>
+                    <div className="md:hidden my-8">
+                        <Card className="overflow-hidden rounded-2xl shadow-2xl shadow-primary/20">
+                            <Image src="https://i.imgur.com/AoRMTxa.png" alt="App Preview" width={600} height={800} className="w-full" data-ai-hint="app mockup" />
+                        </Card>
+                    </div>
+                    <p className="mt-6 text-lg text-foreground/80">
+                        Com nosso app, você terá acesso à: PDF detalhado da receita, com todos os erros e práticas que você deve ter para fazer seu doce. Uma Mega Vídeo Aula, de cada passo da receita. E garantido hoje você ainda leva um SUPER BÔNUS: 150 receitas de recheios e brigadeiros que não vão ao fogo.
+                    </p>
+                    <p className="mt-4 text-2xl font-bold text-accent">Chega de desperdiçar seus ingredientes. Tenha sucesso na primeira tentativa ainda hoje!</p>
+                </div>
             </div>
-            <div className="text-center md:text-left order-1 md:order-2">
-              <h2 className="font-headline text-3xl font-bold text-foreground sm:text-4xl">Com o app "O Segredo do Morango do Amor Perfeito" você vai descobrir o que não te contam para fazer um doce impecável.</h2>
-              <p className="mt-6 text-lg text-foreground/80">
-                Com nosso app, você terá acesso à: PDF detalhado da receita, com todos os erros e práticas que você deve ter para fazer seu doce. Uma Mega Vídeo Aula, de cada passo da receita. E garantido hoje você ainda leva um SUPER BÔNUS: 150 receitas de recheios e brigadeiros que não vão ao fogo.
-              </p>
-              <p className="mt-4 text-2xl font-bold text-accent">Chega de desperdiçar seus ingredientes. Tenha sucesso na primeira tentativa ainda hoje!</p>
-            </div>
-          </div>
         </section>
 
         <section className="bg-card py-16 sm:py-24">
@@ -225,13 +232,13 @@ export default function SalesPage() {
                     </ul>
 
                     <div className="text-center bg-primary/10 p-4 rounded-lg">
-                        <p className="text-lg text-foreground/80">No total tudo deveria custar <span className="line-through">R$ 174,00</span></p>
+                        <p className="text-lg text-foreground/80">No total tudo deveria custar <span className="line-through">R$ 370,00</span></p>
                         <p className="text-lg mt-2">Mas hoje você vai ter acesso completo por:</p>
                         <p className="font-headline text-5xl font-bold text-accent my-2">R$ 9,90</p>
                     </div>
 
                     <div className="mt-8">
-                        <Button asChild size="lg" className="h-auto w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-xl px-8 py-6 shadow-2xl shadow-accent/40 transition-transform duration-300 hover:scale-105">
+                        <Button asChild size="lg" className="h-auto w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-xl px-8 py-6 shadow-2xl shadow-accent/40 animate-pulse-slow">
                             <a href={checkoutUrl}>Quero fazer um Morango do Amor Perfeito!</a>
                         </Button>
                     </div>
