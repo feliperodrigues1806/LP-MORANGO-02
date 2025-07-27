@@ -119,11 +119,11 @@ export default function SalesPage() {
               </Card>
             </div>
             <div className="text-center md:text-left order-1 md:order-2">
-              <h2 className="font-headline text-3xl font-bold text-foreground sm:text-4xl">O Segredo que Mudou Tudo</h2>
+              <h2 className="font-headline text-3xl font-bold text-foreground sm:text-4xl">Com o app "O Segredo do Morango do Amor Perfeito" você vai descobrir o que não te contam para fazer um doce impecável.</h2>
               <p className="mt-6 text-lg text-foreground/80">
-                Com o App “Segredo do Morango do Amor”, você segue um passo a passo à prova de erros com vídeo, PDF e instruções visuais para nunca mais falhar.
+                Com nosso app, você terá acesso à: PDF detalhado da receita, com todos os erros e práticas que você deve ter para fazer seu doce. Uma Mega Vídeo Aula, de cada passo da receita. E garantido hoje você ainda leva um SUPER BÔNUS: 150 receitas de recheios e brigadeiros que não vão ao fogo.
               </p>
-              <p className="mt-4 text-2xl font-bold text-accent">Chega de desperdiçar ingredientes. Tenha sucesso na primeira tentativa por apenas R$9,90.</p>
+              <p className="mt-4 text-2xl font-bold text-accent">Chega de desperdiçar seus ingredientes. Tenha sucesso na primeira tentativa ainda hoje!</p>
             </div>
           </div>
         </section>
