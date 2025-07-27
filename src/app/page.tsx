@@ -42,6 +42,13 @@ export default function SalesPage() {
     }
   ];
 
+  const carouselImages = [
+    { src: "https://i.imgur.com/XIJj4gO.png", alt: "Morango do Amor Exemplo 1" },
+    { src: "https://i.imgur.com/pYLWKOQ.png", alt: "Morango do Amor Exemplo 2" },
+    { src: "https://i.imgur.com/Gxt710S.png", alt: "Morango do Amor Exemplo 3" },
+    { src: "https://i.imgur.com/ZVsombB.png", alt: "Morango do Amor Exemplo 4" },
+  ];
+
   return (
     <div className="flex min-h-screen flex-col bg-background font-body text-foreground">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -152,9 +159,13 @@ export default function SalesPage() {
           <div className="mt-10 max-w-3xl mx-auto">
             <Carousel opts={{ loop: true }} className="w-full">
               <CarouselContent>
-                <CarouselItem><Card className="overflow-hidden rounded-xl"><Image src="https://placehold.co/800x600.png" alt="Doce perfeito para festas" width={800} height={600} data-ai-hint="dessert party" /></Card></CarouselItem>
-                <CarouselItem><Card className="overflow-hidden rounded-xl"><Image src="https://placehold.co/800x600.png" alt="Doce para presentear" width={800} height={600} data-ai-hint="dessert giftbox" /></Card></CarouselItem>
-                <CarouselItem><Card className="overflow-hidden rounded-xl"><Image src="https://placehold.co/800x600.png" alt="Doce perfeito" width={800} height={600} data-ai-hint="perfect dessert" /></Card></CarouselItem>
+                {carouselImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <Card className="overflow-hidden rounded-xl">
+                      <Image src={image.src} alt={image.alt} width={800} height={600} />
+                    </Card>
+                  </CarouselItem>
+                ))}
               </CarouselContent>
               <CarouselPrevious className="ml-12" />
               <CarouselNext className="mr-12" />
