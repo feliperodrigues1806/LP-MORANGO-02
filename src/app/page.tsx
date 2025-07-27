@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Heart, Smartphone, Video, BookOpen, Gift, XCircle, CheckCircle2 } from "lucide-react";
 
@@ -49,6 +49,15 @@ export default function SalesPage() {
     { src: "https://i.imgur.com/ZVsombB.png", alt: "Morango do Amor Exemplo 4" },
   ];
 
+  const offerItems = [
+      { text: "Acesso Exclusivo ao APP", price: "De R$ 30" },
+      { text: "PDF DETALHADO DE NOSSA RECEITA", price: "De R$ 20" },
+      { text: "VÍDEO PASSO A PASSO DA RECEITA", price: "De R$ 27" },
+      { text: "BÔNUS EXCLUSIVO: 150 Receitas de Recheios que não vão ao fogo", price: "De R$ 97" },
+      { text: "Suporte Profissional", price: "" },
+      { text: "Garantia Incondicional", price: "" },
+  ];
+
   return (
     <div className="flex min-h-screen flex-col bg-background font-body text-foreground">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -76,7 +85,7 @@ export default function SalesPage() {
           </p>
           <div className="mt-10">
             <Button asChild size="lg" className="h-auto w-full max-w-md bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase tracking-wider text-lg px-10 py-6 shadow-2xl shadow-accent/40 transition-transform duration-300 hover:scale-105">
-              <a href={checkoutUrl}>QUERO O MEU ACESSO POR R$9,90 AGORA</a>
+              <a href="#cta">QUERO O MEU ACESSO POR R$9,90 AGORA</a>
             </Button>
           </div>
         </section>
@@ -86,7 +95,7 @@ export default function SalesPage() {
             <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">CHEGA DE:</h2>
             <Card className="mt-10 p-8 shadow-lg bg-background">
               <div className="mb-8">
-                <Image src="https://i.imgur.com/9nc3Jw5.jpeg" alt="Morangos com calda" width={400} height={266} className="w-full max-w-md mx-auto rounded-2xl shadow-xl" />
+                <Image src="https://i.imgur.com/9nc3Jw5.jpeg" alt="Morangos com calda" width={400} height={266} className="w-full max-w-sm mx-auto rounded-2xl shadow-xl" />
               </div>
               <ul className="space-y-5 text-lg text-foreground/90">
                 <li className="flex items-start gap-4">
@@ -177,14 +186,41 @@ export default function SalesPage() {
         </section>
 
         <section id="cta" className="bg-card py-16 sm:py-24">
-          <div className="container mx-auto max-w-3xl px-4 text-center">
-            <h2 className="font-headline text-3xl font-bold text-foreground sm:text-4xl">Pronta para acertar de vez?</h2>
-            <div className="mt-8">
-              <Button asChild size="lg" className="h-auto w-full max-w-lg bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase tracking-wider text-xl px-10 py-7 shadow-2xl shadow-accent/40 transition-transform duration-300 hover:scale-105">
-                <a href={checkoutUrl}>QUERO O MEU ACESSO POR R$9,90 AGORA</a>
-              </Button>
-            </div>
-            <div className="mt-8 flex items-center justify-center gap-4 rounded-xl border-2 border-green-500 bg-green-50 p-4 max-w-md mx-auto">
+          <div className="container mx-auto max-w-2xl px-4 text-center">
+            <Card className="bg-background shadow-2xl shadow-primary/20 border-primary border-2">
+                <CardHeader className="p-6">
+                    <CardTitle className="font-headline text-2xl sm:text-3xl text-center">❤️ Recapitulando tudo que você vai receber 🍓</CardTitle>
+                </CardHeader>
+                <CardContent className="p-6 pt-0">
+                    <div className="mb-6">
+                        <Image src="https://i.imgur.com/AoRMTxa.png" alt="Offer summary" width={600} height={400} className="rounded-lg mx-auto" />
+                    </div>
+
+                    <ul className="space-y-4 text-left mb-6">
+                        {offerItems.map((item, index) => (
+                            <li key={index} className="flex items-start gap-3">
+                                <CheckCircle2 className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                                <span className="flex-1 font-semibold">{item.text}</span>
+                                <span className="text-sm text-foreground/70 line-through">{item.price}</span>
+                            </li>
+                        ))}
+                    </ul>
+
+                    <div className="text-center bg-primary/10 p-4 rounded-lg">
+                        <p className="text-lg text-foreground/80">No total tudo deveria custar <span className="line-through">R$ 174,00</span></p>
+                        <p className="text-lg mt-2">Mas hoje você vai ter acesso completo por:</p>
+                        <p className="font-headline text-5xl font-bold text-accent my-2">R$ 9,90</p>
+                    </div>
+
+                    <div className="mt-8">
+                        <Button asChild size="lg" className="h-auto w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-xl px-8 py-6 shadow-2xl shadow-accent/40 transition-transform duration-300 hover:scale-105">
+                            <a href={checkoutUrl}>Quero fazer um Morango do Amor Perfeito!</a>
+                        </Button>
+                    </div>
+
+                </CardContent>
+            </Card>
+             <div className="mt-8 flex items-center justify-center gap-4 rounded-xl border-2 border-green-500 bg-green-50 p-4 max-w-md mx-auto">
               <CheckCircle2 className="h-10 w-10 text-green-600 flex-shrink-0" />
               <div>
                 <p className="font-semibold text-green-800 text-left">Garantia incondicional de 7 dias.</p>
