@@ -135,6 +135,9 @@ export default function SalesPage() {
           <h1 className="font-headline text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Você vai fazer o Morango do Amor Perfeito ainda hoje – <span className="text-primary">mesmo que nunca tenha acertado um doce na vida.</span>
           </h1>
+          <div className="my-8">
+            <Image src="https://i.imgur.com/erXA2Pr.gif" alt="Demonstração do Morango do Amor" width={400} height={400} className="mx-auto rounded-2xl shadow-xl" />
+          </div>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/80 sm:text-xl">
             Revelamos o TRUQUE do Morango do Amor que ninguém te conta com nosso app: com imagens, vídeo e explicações claras – sem enrolação.
           </p>
@@ -332,3 +335,5 @@ export default function SalesPage() {
     </div>
   )
 }
+
+    
