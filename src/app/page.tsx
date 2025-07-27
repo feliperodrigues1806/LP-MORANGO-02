@@ -245,12 +245,14 @@ export default function SalesPage() {
 
                 </CardContent>
             </Card>
-             <div className="mt-8 flex items-center justify-center gap-4 rounded-xl border-2 border-green-500 bg-green-50 p-4 max-w-md mx-auto">
-              <CheckCircle2 className="h-10 w-10 text-green-600 flex-shrink-0" />
-              <div>
-                <p className="font-semibold text-green-800 text-left">Garantia incondicional de 7 dias.</p>
-                <p className="text-sm text-green-700 text-left">Se não amar o método ou não tiver resultados, seu dinheiro de volta. Simples assim.</p>
-              </div>
+             <div className="mt-8 max-w-md mx-auto text-center">
+              <Image src="https://i.imgur.com/BtlkF9j.png" alt="Selo de Garantia 7 dias" width={150} height={150} className="mx-auto mb-4" />
+              <p className="text-foreground/80">
+                Estamos tão certo de que você vai amar o app O Segredo do Morango do Amor Perfeito que oferecemos uma garantia de satisfação total por 7 dias.
+              </p>
+              <p className="mt-2 font-semibold text-foreground">
+                Se não amar o método ou não tiver resultados, seu dinheiro de volta. Simples assim.
+              </p>
             </div>
           </div>
         </section>
