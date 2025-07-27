@@ -29,16 +29,24 @@ export default function SalesPage() {
 
   const faqItems = [
     {
-      question: "É só uma receita?",
-      answer: "Não! É um método completo. Você recebe o app com o passo a passo em vídeo, um PDF detalhado com dicas e os erros mais comuns para evitar, e o bônus exclusivo de 150 receitas de recheios frios e brigadeiros sem fogo."
+      question: "Nunca consegui acertar doces, vou conseguir mesmo assim?",
+      answer: "Sim! O app foi criado exatamente para quem já tentou e não conseguiu. O passo a passo é visual, didático e mostra o ponto exato da calda, mesmo para iniciantes."
     },
     {
-      question: "Funciona mesmo sem experiência?",
-      answer: "Sim! O método foi desenhado para iniciantes. As instruções visuais e o passo a passo detalhado garantem que até quem nunca cozinhou consiga acertar de primeira."
+      question: "Preciso saber cozinhar ou ter experiência?",
+      answer: "Não precisa! O método foi feito para quem nunca acertou um doce. Basta seguir o tutorial, sem segredos e sem técnicas complicadas."
     },
     {
-      question: "O que acontece após a compra?",
-      answer: "O acesso é imediato. Assim que o pagamento for confirmado, você receberá um e-mail com todas as instruções para acessar o app e baixar seu material."
+      question: "O acesso é imediato?",
+      answer: "Sim, totalmente imediato. Após a compra, você já recebe o acesso direto no seu e-mail para começar na hora que quiser."
+    },
+    {
+        question: "Como recebo o acesso?",
+        answer: "Assim que o pagamento é aprovado, você recebe um e-mail com o link de acesso ao app, ao vídeo tutorial e ao PDF da receita. Tudo em poucos minutos."
+    },
+    {
+        question: "Qual a diferença para outras receitas da internet?",
+        answer: "A maioria das receitas só mostra o básico e deixa de fora o verdadeiro segredo do Morango do Amor Perfeito: o ponto exato da calda, o truque que ninguém ensina nos vídeos. No app, você vê esse passo crítico em detalhes, com vídeo, dicas visuais e PDF — além de ganhar 150 recheios frios exclusivos de bônus. É a diferença entre só tentar… e finalmente acertar."
     }
   ];
 
@@ -231,7 +239,7 @@ export default function SalesPage() {
         </section>
 
         <section className="container mx-auto max-w-3xl px-4 py-16 sm:py-24">
-          <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">Ainda tem dúvidas?</h2>
+          <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">Dúvidas Frequentes</h2>
           <Accordion type="single" collapsible className="mt-10 w-full">
             {faqItems.map((item, index) => (
               <AccordionItem value={`item-${index+1}`} key={index} className="border-border bg-card px-4 rounded-lg mb-2 shadow-sm">
@@ -260,3 +268,5 @@ export default function SalesPage() {
     </div>
   )
 }
+
+    
