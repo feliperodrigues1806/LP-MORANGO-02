@@ -55,7 +55,7 @@ function CountdownTimer() {
 export default function SalesPage() {
     const checkoutUrl = "https://www.ggcheckout.com/checkout/v2/JM3AHuV1i75ZU4ka1lYx";
     const whatsappUrl = "https://wa.me/5511914758577";
-    const [emblaRef] = useEmblaCarousel({ loop: true });
+    const [emblaRef] = useEmblaCarousel({ loop: true, dragFree: true });
 
     React.useEffect(() => {
         if (typeof window.fbq === 'function') {
@@ -234,7 +234,7 @@ export default function SalesPage() {
                                     <p className="font-headline text-4xl sm:text-5xl font-bold text-accent my-2">R$ 9,90</p>
                                 </div>
                                 <div className="mt-6">
-                                    <Button asChild size="lg" className="h-auto w-full bg-green-500 hover:bg-green-600 text-white font-bold text-lg sm:text-xl px-8 py-5 shadow-2xl shadow-green-500/40 animate-pulse-slow">
+                                    <Button asChild size="lg" className="h-auto w-full bg-green-500 hover:bg-green-600 text-white font-bold text-base sm:text-lg px-4 sm:px-8 py-5 shadow-2xl shadow-green-500/40 animate-pulse-slow">
                                         <a href={checkoutUrl}>Quero fazer um Morango do Amor Perfeito!</a>
                                     </Button>
                                 </div>
@@ -294,5 +294,4 @@ export default function SalesPage() {
             </footer>
         </div>
     );
-
-    
+}
