@@ -124,7 +124,7 @@ export default function SalesPage() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background font-body text-foreground">
-      <header className="sticky top-0 z-50 w-full bg-green-500">
+      <header className="sticky top-0 z-50 w-full bg-red-500">
         <div className="container flex h-16 max-w-screen-lg items-center justify-center px-4">
           <CountdownTimer />
         </div>
@@ -335,5 +335,3 @@ export default function SalesPage() {
     </div>
   )
 }
-
-    
