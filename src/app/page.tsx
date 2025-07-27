@@ -110,6 +110,9 @@ export default function SalesPage() {
                 </li>
               </ul>
             </Card>
+            <div className="mt-12">
+              <Image src="https://i.imgur.com/9nc3Jw5.jpeg" alt="Morangos com calda" width={1200} height={800} className="w-full rounded-2xl shadow-2xl" />
+            </div>
           </div>
         </section>
 
