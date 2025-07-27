@@ -169,6 +169,16 @@ export default function SalesPage() {
             </Card>
           </div>
         </section>
+        
+        <section className="container mx-auto max-w-3xl px-4 py-16 sm:py-24 text-center">
+          <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">Nosso App por dentro🥰</h2>
+          <div className="mt-10">
+            <Image src="https://i.imgur.com/6MLwlJJ.png" alt="Nosso App por dentro" width={800} height={450} className="mx-auto rounded-lg shadow-xl" />
+          </div>
+          <p className="mt-6 text-xl text-foreground/80">
+            Tudo feito com muito amor, pensado pra você!
+          </p>
+        </section>
 
         <section className="container mx-auto max-w-5xl px-4 py-16 text-center sm:py-24">
           <h2 className="font-headline text-3xl font-bold sm:text-4xl">Você vai fazer Morangos do Amor como esses:</h2>
@@ -268,5 +278,3 @@ export default function SalesPage() {
     </div>
   )
 }
-
-    
