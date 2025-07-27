@@ -6,7 +6,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Heart, Smartphone, Video, BookOpen, Gift, XCircle, CheckCircle2 } from "lucide-react";
 
 export default function SalesPage() {
-  const checkoutUrl = "#"; // Replace with your checkout link
+  const checkoutUrl = "https://www.ggcheckout.com/checkout/v2/JM3AHuV1i75ZU4ka1lYx";
 
   const benefits = [
     {
@@ -87,9 +87,6 @@ export default function SalesPage() {
           <h1 className="font-headline text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Você vai fazer o Morango do Amor Perfeito ainda hoje – <span className="text-primary">mesmo que nunca tenha acertado um doce na vida.</span>
           </h1>
-          <div className="mt-4">
-            <Image src="https://i.imgur.com/erXA2Pr.gif" alt="Demonstração do Morango do Amor" width={300} height={300} className="mx-auto rounded-lg" unoptimized />
-          </div>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/80 sm:text-xl">
             Revelamos o TRUQUE do Morango do Amor que ninguém te conta com nosso app: com imagens, vídeo e explicações claras – sem enrolação.
           </p>
@@ -238,7 +235,7 @@ export default function SalesPage() {
                     </div>
 
                     <div className="mt-8">
-                        <Button asChild size="lg" className="h-auto w-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-xl px-8 py-6 shadow-2xl shadow-accent/40 animate-pulse-slow">
+                        <Button asChild size="lg" className="h-auto w-full bg-green-500 hover:bg-green-600 text-white font-bold text-xl px-8 py-6 shadow-2xl shadow-green-500/40 animate-pulse-slow">
                             <a href={checkoutUrl}>Quero fazer um Morango do Amor Perfeito!</a>
                         </Button>
                     </div>
@@ -278,7 +275,7 @@ export default function SalesPage() {
           <p className="mt-4 text-lg text-foreground/80">Essa oferta de R$9,90 é por tempo limitado e pode sair do ar a qualquer momento. Garanta o seu acesso e domine o Morango do Amor Perfeito de uma vez por todas.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold px-10 py-5 h-auto shadow-lg transition-transform duration-300 hover:scale-105">
-              <a href={checkoutUrl}>Garantir Acesso Agora</a>
+              <a href="#cta">Garantir Acesso Agora</a>
             </Button>
           </div>
           <p className="text-xs mt-8 text-foreground/50">Morango do Amor Pro &copy; 2024. Todos os direitos reservados.</p>
