@@ -62,7 +62,7 @@ export default function SalesPage() {
             Você vai fazer o Morango do Amor Perfeito ainda hoje – <span className="text-primary">mesmo que nunca tenha acertado um doce na vida.</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/80 sm:text-xl">
-            Um app simples, visual e direto, por apenas R$9,90. Resultado já na primeira tentativa.
+            Aprenda de uma vez por todas com nosso app: com imagens, vídeo e explicações claras – sem enrolação.
           </p>
           <div className="mt-10">
             <Button asChild size="lg" className="h-auto w-full max-w-md bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase tracking-wider text-lg px-10 py-6 shadow-2xl shadow-accent/40 transition-transform duration-300 hover:scale-105">
