@@ -72,11 +72,6 @@ export default function SalesPage() {
               <a href={checkoutUrl}>QUERO O MEU ACESSO POR R$9,90 AGORA</a>
             </Button>
           </div>
-          <div className="mt-12 mx-auto max-w-4xl">
-            <Card className="overflow-hidden rounded-2xl border-4 border-white shadow-2xl shadow-primary/20">
-              <Image src="https://placehold.co/1200x600.png" alt="Morango do Amor Perfeito" width={1200} height={600} className="w-full" data-ai-hint="strawberry chocolate" priority />
-            </Card>
-          </div>
         </section>
 
         <section className="bg-card py-16 sm:py-24">
@@ -84,7 +79,7 @@ export default function SalesPage() {
             <h2 className="text-center font-headline text-3xl font-bold text-foreground sm:text-4xl">CHEGA DE:</h2>
             <Card className="mt-10 p-8 shadow-lg bg-background">
               <div className="mb-8">
-                <Image src="https://i.imgur.com/9nc3Jw5.jpeg" alt="Morangos com calda" width={800} height={533} className="w-full rounded-2xl shadow-xl" />
+                <Image src="https://i.imgur.com/9nc3Jw5.jpeg" alt="Morangos com calda" width={400} height={266} className="w-full max-w-md mx-auto rounded-2xl shadow-xl" />
               </div>
               <ul className="space-y-5 text-lg text-foreground/90">
                 <li className="flex items-start gap-4">
