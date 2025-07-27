@@ -1,9 +1,63 @@
+
+'use client';
+
 import Image from "next/image";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Heart, Smartphone, Video, BookOpen, Gift, XCircle, CheckCircle2 } from "lucide-react";
+import { Heart, Smartphone, Video, BookOpen, Gift, XCircle, CheckCircle2, AlarmClock } from "lucide-react";
+import React, { useState, useEffect } from 'react';
+
+function CountdownTimer() {
+  const [timeLeft, setTimeLeft] = useState({
+    hours: 0,
+    minutes: 7,
+    seconds: 17,
+  });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prevTime => {
+        const { hours, minutes, seconds } = prevTime;
+
+        if (hours === 0 && minutes === 0 && seconds === 0) {
+          clearInterval(timer);
+          return prevTime;
+        }
+
+        if (seconds > 0) {
+          return { ...prevTime, seconds: seconds - 1 };
+        }
+
+        if (minutes > 0) {
+          return { ...prevTime, minutes: minutes - 1, seconds: 59 };
+        }
+
+        if (hours > 0) {
+          return { hours: hours - 1, minutes: 59, seconds: 59 };
+        }
+
+        return prevTime;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="flex items-center gap-2 font-bold text-red-500 animate-pulse">
+        <AlarmClock className="h-6 w-6" />
+        <span>OFERTA ACABANDO:</span>
+        <span className="font-mono tracking-wider">
+            {String(timeLeft.hours).padStart(2, '0')}:
+            {String(timeLeft.minutes).padStart(2, '0')}:
+            {String(timeLeft.seconds).padStart(2, '0')}
+        </span>
+    </div>
+  );
+}
+
 
 export default function SalesPage() {
   const checkoutUrl = "https://www.ggcheckout.com/checkout/v2/JM3AHuV1i75ZU4ka1lYx";
@@ -72,10 +126,7 @@ export default function SalesPage() {
     <div className="flex min-h-screen flex-col bg-background font-body text-foreground">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 max-w-screen-lg items-center justify-between px-4">
-          <div className="flex items-center gap-2">
-            <Heart className="h-7 w-7 text-primary" />
-            <span className="font-bold font-headline text-xl">Morango do Amor Pro</span>
-          </div>
+          <CountdownTimer />
           <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold shadow-lg">
             <a href="#cta">Quero o Acesso</a>
           </Button>
@@ -284,3 +335,5 @@ export default function SalesPage() {
     </div>
   )
 }
+
+    
