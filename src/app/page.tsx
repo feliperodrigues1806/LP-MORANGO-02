@@ -115,7 +115,7 @@ export default function SalesPage() {
           <div className="grid items-center gap-12 md:grid-cols-2">
              <div className="order-2 md:order-1">
               <Card className="overflow-hidden rounded-2xl shadow-2xl shadow-primary/20">
-                <Image src="https://placehold.co/600x800.png" alt="App Preview" width={600} height={800} className="w-full" data-ai-hint="app mockup" />
+                <Image src="https://i.imgur.com/AoRMTxa.png" alt="App Preview" width={600} height={800} className="w-full" data-ai-hint="app mockup" />
               </Card>
             </div>
             <div className="text-center md:text-left order-1 md:order-2">
