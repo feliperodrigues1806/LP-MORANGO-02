@@ -56,11 +56,13 @@ export default function SalesPage() {
     const checkoutUrl = "https://www.ggcheckout.com/checkout/v2/JM3AHuV1i75ZU4ka1lYx";
     const whatsappUrl = "https://wa.me/5511914758577";
     const [emblaRef] = useEmblaCarousel({ loop: true, dragFree: true });
+    const [year, setYear] = React.useState(new Date().getFullYear());
 
     React.useEffect(() => {
         if (typeof window.fbq === 'function') {
             window.fbq('track', 'ViewContent');
         }
+        setYear(new Date().getFullYear());
     }, []);
 
     const benefits = [
@@ -289,7 +291,7 @@ export default function SalesPage() {
                             <a href="#cta">Garantir Acesso Agora</a>
                         </Button>
                     </div>
-                    <p className="text-xs mt-8 text-foreground/50">Morango do Amor Pro &copy; {new Date().getFullYear()}. Todos os direitos reservados.</p>
+                    <p className="text-xs mt-8 text-foreground/50">Morango do Amor Pro &copy; {year}. Todos os direitos reservados.</p>
                 </div>
             </footer>
         </div>
