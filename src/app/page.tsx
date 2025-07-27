@@ -6,7 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Heart, Smartphone, Video, BookOpen, Gift, XCircle, CheckCircle2, AlarmClock } from "lucide-react";
+import { Heart, Smartphone, Video, BookOpen, Gift, XCircle, CheckCircle2, AlarmClock, MessageSquare } from "lucide-react";
 import React, { useState, useEffect } from 'react';
 
 function CountdownTimer() {
@@ -61,6 +61,7 @@ function CountdownTimer() {
 
 export default function SalesPage() {
   const checkoutUrl = "https://www.ggcheckout.com/checkout/v2/JM3AHuV1i75ZU4ka1lYx";
+  const whatsappUrl = "https://wa.me/5511914758577";
 
   const benefits = [
     {
@@ -318,6 +319,20 @@ export default function SalesPage() {
             ))}
           </Accordion>
         </section>
+
+        <section className="container mx-auto max-w-3xl px-4 pb-16 text-center sm:pb-24">
+          <h3 className="text-2xl font-bold font-headline">Ainda tem dúvidas?</h3>
+          <p className="mt-2 text-lg text-foreground/80">fale com a gente pelo whatsapp</p>
+          <div className="mt-6">
+            <Button asChild size="lg" className="h-auto bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                <MessageSquare className="h-6 w-6 mr-3" />
+                Chamar no WhatsApp
+              </a>
+            </Button>
+          </div>
+        </section>
+
       </main>
 
       <footer className="border-t border-border/40 bg-card">
@@ -334,4 +349,5 @@ export default function SalesPage() {
       </footer>
     </div>
   )
-}
+
+    
