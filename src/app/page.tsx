@@ -81,7 +81,7 @@ export default function SalesPage() {
             <Image src="https://i.imgur.com/erXA2Pr.gif" alt="Demonstração do Morango do Amor" width={300} height={300} className="mx-auto rounded-lg" unoptimized />
           </div>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-foreground/80 sm:text-xl">
-            Aprenda de uma vez por todas com nosso app: com imagens, vídeo e explicações claras – sem enrolação.
+            Revelamos o TRUQUE do Morango do Amor que ninguém te conta com nosso app: com imagens, vídeo e explicações claras – sem enrolação.
           </p>
           <div className="mt-10">
             <Button asChild size="lg" className="h-auto w-full max-w-md bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase tracking-wider text-lg px-10 py-6 shadow-2xl shadow-accent/40 transition-transform duration-300 hover:scale-105">
