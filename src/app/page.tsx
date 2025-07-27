@@ -63,6 +63,12 @@ export default function SalesPage() {
   const checkoutUrl = "https://www.ggcheckout.com/checkout/v2/JM3AHuV1i75ZU4ka1lYx";
   const whatsappUrl = "https://wa.me/5511914758577";
 
+  useEffect(() => {
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'ViewContent');
+    }
+  }, []);
+
   const benefits = [
     {
       icon: <Smartphone className="h-8 w-8" />,
@@ -349,6 +355,8 @@ export default function SalesPage() {
       </footer>
     </div>
   )
+
+    
 
     
 
